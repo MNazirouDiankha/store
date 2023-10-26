@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*==================Typographie===============*/
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.55;
+  color: rgb(60, 58, 71);
+}
+
+h1 {
+  font-size: 3.15rem;
+  font-weight: 700;
+  letter-spacing: -2.5px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  letter-spacing: -2px;
+  color: rgba(60, 58, 71, 0.8);
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  margin-bottom: 2rem;
+}
+
+h3.large {
+  font-size: 3.15rem;
+}
+
+.dark h3 {
+  color: white;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+p.section-intro {
+  font-size: 1rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: rgba(60, 58, 71, 0.8);
+}
+
+.dark p.section-intro {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+p.number {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: rgba(60, 58, 71, 0.5);
+}
+
+p.large {
+  font-size: 1.75rem;
+  font-weight: 200;
+  letter-spacing: -2px;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(159, 118, 87);
+}
+
+a:hover {
+  color: rgba(60, 58, 71, 0.7);
+}
+
+form input,
+form textarea,
+form button {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.55;
+  font-size: 1rem;
+}
+
+/*=================Container===============*/
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+
+.container.small {
+  width: 60%;
+  max-width: 35rem;
+}
+
+/*=================Header===============*/
+
+#main-header,
+section {
+  padding: 13rem 0;
+  text-align: center;
+}
+
+#main-header h1 {
+  margin: 7rem 0 1rem 0;
+}
+
+#main-header h2 {
+  margin-bottom: 7rem;
+}
+
+.btn {
+  padding: 1.3rem 3.5rem;
+  border: 1px solid #9f7657;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: rgb(60, 58, 71);
+  border-color: rgb(60, 58, 71);
+  color: rgba(255, 255, 255);
+}
+
+/*=================Our Chair===============*/
+
+#our-chairs {
+  background: #eff0ea;
+}
+
+section header {
+  margin-bottom: 3.5rem;
+}
+
+h3 + p {
+  max-width: 35rem;
+  margin: 0 auto 0 auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.gallery img {
+  max-width: 100%;
+}
+.gallery div {
+  text-align: start;
+}
+
+/*=================Contacts===============*/
+
+.dark {
+  background-color: rgb(60, 58, 71);
+}
+
+.dark label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+form div {
+  margin-bottom: 1.75rem;
+}
+
+form label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  color: rgba(255, 255, 255);
+  resize: none;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+form .btn {
+  width: 100%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #ffffff;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: rgba(255, 255, 255);
+  color: rgb(60, 58, 71);
+}
+
+p.muted {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*=================Store visite===============*/
+.social-icons {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 7rem;
+}
+
+ul.social-icons + img:hover {
+  background-color: rgba(255, 255, 255);
+}
+
+/*=================Footer===============*/
+
+footer {
+  padding: 5rem 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+/*=================Responsive===============*/
+
+@media screen and (max-width: 600px) {
+  h1,
+  h3.large {
+    font-size: 2.3rem;
+  }
+
+  h2,
+  p.large {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .btn {
+    padding: 1.2rem 0.5rem;
+    border: 1px solid #9f7657;
+    font-weight: 700;
+  }
+
+  .container.small {
+    width: 85%;
+    max-width: 35rem;
+  }
+}
