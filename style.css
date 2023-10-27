@@ -268,19 +268,16 @@ footer p {
   #main-header h1 {
     margin: 2rem 0;
   }
-
+  .btn {
+    padding: 1.2rem 0.5rem;
+  }
   footer {
     padding: 2.5rem 0;
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
   .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.75rem;
-  }
-
-  .btn {
-    padding: 1.2rem 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
