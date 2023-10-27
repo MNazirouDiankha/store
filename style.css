@@ -254,12 +254,23 @@ footer p {
     font-size: 1.3rem;
   }
 
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .container.small {
+    width: 85%;
+  }
   #main-header,
   section {
     padding: 4rem 0;
   }
   #main-header h1 {
     margin: 2rem 0;
+  }
+
+  footer {
+    padding: 2.5rem 0;
   }
 }
 
@@ -271,9 +282,5 @@ footer p {
 
   .btn {
     padding: 1.2rem 0.5rem;
-  }
-
-  .container.small {
-    width: 85%;
   }
 }
