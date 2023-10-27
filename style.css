@@ -253,9 +253,17 @@ footer p {
   p.large {
     font-size: 1.3rem;
   }
+
+  #main-header,
+  section {
+    padding: 4rem 0;
+  }
+  #main-header h1 {
+    margin: 2rem 0;
+  }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 500px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75rem;
@@ -263,12 +271,9 @@ footer p {
 
   .btn {
     padding: 1.2rem 0.5rem;
-    border: 1px solid #9f7657;
-    font-weight: 700;
   }
 
   .container.small {
     width: 85%;
-    max-width: 35rem;
   }
 }
